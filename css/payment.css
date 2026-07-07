@@ -1,0 +1,404 @@
+/* =====================================
+   PAYMENT PAGE
+   KONFIRMASI PEMBAYARAN
+===================================== */
+
+
+
+.payment-container{
+
+
+    width:90%;
+
+    max-width:450px;
+
+    margin:25px auto 90px;
+
+
+}
+
+
+
+/* =====================================
+   TITLE
+===================================== */
+
+
+.payment-container h2{
+
+
+    text-align:center;
+
+    font-size:22px;
+
+    color:var(--text);
+
+    margin-bottom:8px;
+
+
+}
+
+
+
+.payment-container .subtitle{
+
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* =====================================
+   CARD
+===================================== */
+
+
+.payment-container .card{
+
+
+    background:var(--white);
+
+    border-radius:22px;
+
+    padding:20px;
+
+
+    margin-bottom:20px;
+
+
+    box-shadow:
+
+    0 8px 20px rgba(0,0,0,.06);
+
+
+}
+
+
+
+/* =====================================
+   CARD TITLE
+===================================== */
+
+
+.payment-container h3{
+
+
+    font-size:18px;
+
+    margin-bottom:20px;
+
+    color:var(--primary-dark);
+
+
+}
+
+
+
+/* =====================================
+   BOOKING INFORMATION
+===================================== */
+
+
+.info-row{
+
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+
+    padding:12px 0;
+
+
+    border-bottom:1px solid #eee;
+
+
+    font-size:14px;
+
+
+}
+
+
+
+.info-row:last-child{
+
+
+    border-bottom:none;
+
+
+}
+
+
+
+.info-row span{
+
+
+    color:var(--gray);
+
+
+}
+
+
+
+.info-row strong{
+
+
+    color:var(--text);
+
+    text-align:right;
+
+
+}
+
+
+
+/* =====================================
+   TOTAL
+===================================== */
+
+
+.info-row.total{
+
+
+    margin-top:10px;
+
+    padding-top:18px;
+
+
+}
+
+
+
+.info-row.total strong{
+
+
+    color:var(--primary-dark);
+
+    font-size:18px;
+
+
+}
+
+
+
+/* =====================================
+   BANK BOX
+===================================== */
+
+
+.bank-box{
+
+
+    background:#F3F7F4;
+
+    border-radius:18px;
+
+
+    padding:20px;
+
+    text-align:center;
+
+
+}
+
+
+
+.bank-box h4{
+
+
+    font-size:16px;
+
+    margin-bottom:10px;
+
+
+    color:var(--text);
+
+
+}
+
+
+
+.bank-box h2{
+
+
+    margin:10px 0;
+
+    color:var(--primary-dark);
+
+    font-size:25px;
+
+
+}
+
+
+
+.bank-box p{
+
+
+    color:var(--gray);
+
+    font-size:14px;
+
+
+}
+
+
+
+/* =====================================
+   WARNING
+===================================== */
+
+
+.warning{
+
+
+    margin-top:18px;
+
+
+    padding:15px;
+
+
+    border-radius:15px;
+
+
+    background:#FFF4E5;
+
+
+    color:#A56A00;
+
+
+    font-size:13px;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+.warning i{
+
+
+    margin-right:8px;
+
+
+}
+
+
+
+/* =====================================
+   UPLOAD
+===================================== */
+
+
+.payment-container label{
+
+
+    display:block;
+
+    font-size:14px;
+
+    font-weight:500;
+
+    margin-bottom:8px;
+
+
+}
+
+
+
+.payment-container input[type="file"]{
+
+
+    background:#fff;
+
+    padding:12px;
+
+
+}
+
+
+
+/* =====================================
+   BUTTON PAYMENT
+===================================== */
+
+
+.btn-payment{
+
+
+    width:100%;
+
+
+    margin-top:20px;
+
+
+    padding:14px;
+
+
+    border:none;
+
+
+    border-radius:14px;
+
+
+    background:var(--primary);
+
+
+    color:white;
+
+
+    font-weight:600;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+.btn-payment:hover{
+
+
+    background:var(--primary-dark);
+
+
+}
+
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+
+@media(max-width:350px){
+
+
+.payment-container h2{
+
+
+    font-size:20px;
+
+
+}
+
+
+.bank-box h2{
+
+
+    font-size:22px;
+
+
+}
+
+
+}

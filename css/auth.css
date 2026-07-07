@@ -1,0 +1,230 @@
+/* =====================================
+   AUTH PAGE
+   LOGIN & REGISTER
+===================================== */
+
+
+
+.auth-container{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:25px;
+
+}
+
+
+
+.auth-card{
+
+    width:100%;
+
+    max-width:400px;
+
+    background:var(--white);
+
+    padding:35px 25px;
+
+    border-radius:25px;
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.08);
+
+}
+
+
+
+/* =====================================
+   LOGO
+===================================== */
+
+
+.logo{
+
+    width:75px;
+
+    height:75px;
+
+    margin:0 auto 20px;
+
+    border-radius:50%;
+
+
+    background:var(--primary);
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    color:white;
+
+    font-size:35px;
+
+}
+
+
+
+/* =====================================
+   TITLE
+===================================== */
+
+
+.auth-title{
+
+    text-align:center;
+
+    font-size:26px;
+
+    font-weight:700;
+
+    color:var(--primary-dark);
+
+    margin-bottom:8px;
+
+}
+
+
+
+.auth-subtitle{
+
+
+    text-align:center;
+
+    font-size:14px;
+
+    color:var(--gray);
+
+    line-height:1.6;
+
+    margin-bottom:30px;
+
+}
+
+
+
+/* =====================================
+   FORM
+===================================== */
+
+
+.auth-card .form-group{
+
+    margin-bottom:20px;
+
+}
+
+
+
+.auth-card input{
+
+
+    height:48px;
+
+}
+
+
+
+/* =====================================
+   LOGIN BUTTON
+===================================== */
+
+
+.btn-login{
+
+
+    margin-top:10px;
+
+}
+
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+
+.auth-footer{
+
+
+    text-align:center;
+
+    margin-top:25px;
+
+    font-size:14px;
+
+    color:var(--gray);
+
+}
+
+
+
+.auth-footer a{
+
+
+    color:var(--primary-dark);
+
+    font-weight:600;
+
+}
+
+
+
+.auth-footer a:hover{
+
+
+    text-decoration:underline;
+
+}
+
+
+
+/* =====================================
+   REGISTER EXTRA
+===================================== */
+
+
+.register-title{
+
+
+    margin-bottom:25px;
+
+}
+
+
+
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+
+@media(max-width:350px){
+
+
+    .auth-card{
+
+
+        padding:25px 18px;
+
+    }
+
+
+    .auth-title{
+
+
+        font-size:22px;
+
+    }
+
+
+}

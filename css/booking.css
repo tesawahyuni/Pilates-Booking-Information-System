@@ -1,0 +1,269 @@
+/* =====================================
+   BOOKING PAGE
+   LIST JADWAL PILATES
+===================================== */
+
+
+
+/* =====================================
+   PAGE HEADER
+===================================== */
+
+
+.booking-header{
+
+
+    margin-top:25px;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+.booking-header h2{
+
+
+    font-size:22px;
+
+    color:var(--text);
+
+    margin-bottom:8px;
+
+}
+
+
+
+.booking-header p{
+
+
+    color:var(--gray);
+
+    font-size:14px;
+
+}
+
+
+
+/* =====================================
+   BOOKING CARD
+===================================== */
+
+
+.booking-card{
+
+
+    background:var(--white);
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+
+    margin-bottom:25px;
+
+
+    box-shadow:
+
+    0 8px 20px rgba(0,0,0,.07);
+
+
+}
+
+
+
+/* =====================================
+   IMAGE
+===================================== */
+
+
+.booking-image{
+
+
+    width:100%;
+
+    height:200px;
+
+    object-fit:cover;
+
+}
+
+
+
+/* =====================================
+   CONTENT
+===================================== */
+
+
+.booking-card h2{
+
+
+    font-size:20px;
+
+    margin:20px 20px 8px;
+
+
+    color:var(--text);
+
+}
+
+
+
+.booking-card p{
+
+
+    font-size:14px;
+
+    color:var(--gray);
+
+    line-height:1.6;
+
+
+    margin:0 20px 20px;
+
+
+}
+
+
+
+/* =====================================
+   INFO
+===================================== */
+
+
+.booking-info{
+
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+
+    margin:12px 20px;
+
+
+    font-size:14px;
+
+    color:#555;
+
+
+}
+
+
+
+.booking-info i{
+
+
+    color:var(--primary);
+
+    font-size:17px;
+
+}
+
+
+
+/* =====================================
+   PRICE
+===================================== */
+
+
+.booking-price{
+
+
+    margin:20px;
+
+
+    padding:15px;
+
+
+    border-radius:15px;
+
+
+    background:#F3F7F4;
+
+
+    color:var(--primary-dark);
+
+
+    font-size:20px;
+
+    font-weight:700;
+
+
+    text-align:center;
+
+
+}
+
+
+
+/* =====================================
+   BUTTON
+===================================== */
+
+
+.booking-card .btn{
+
+
+    width:calc(100% - 40px);
+
+    margin:0 20px 20px;
+
+
+}
+
+
+
+/* =====================================
+   EMPTY DATA
+===================================== */
+
+
+.empty-booking{
+
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+
+    text-align:center;
+
+
+    color:var(--gray);
+
+
+}
+
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+
+@media(max-width:350px){
+
+
+.booking-card h2{
+
+
+    font-size:18px;
+
+}
+
+
+.booking-image{
+
+
+    height:170px;
+
+}
+
+
+} 

@@ -1,0 +1,14 @@
+# Upload pembayaran
+uploads/
+
+# Database
+database/*.sql
+
+# File editor
+.vscode/
+.idea/
+
+# Temporary
+*.tmp
+.DS_Store
+Thumbs.db 

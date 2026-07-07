@@ -1,0 +1,322 @@
+/* =====================================
+   PILATES BOOKING SYSTEM
+   GLOBAL STYLE
+===================================== */
+
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+
+/* =====================================
+   ROOT COLOR
+===================================== */
+
+:root{
+
+    --primary:#8FAF9D;
+    --primary-dark:#6F917D;
+
+    --secondary:#D8B4A0;
+
+    --cream:#F8F5F0;
+
+    --white:#FFFFFF;
+
+    --text:#333333;
+
+    --gray:#777777;
+
+    --border:#E8E2DA;
+
+    --danger:#D9534F;
+
+    --success:#4CAF50;
+
+}
+
+
+
+/* =====================================
+   RESET
+===================================== */
+
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+
+
+body{
+
+    background:var(--cream);
+
+    color:var(--text);
+
+    min-height:100vh;
+
+}
+
+
+
+/* =====================================
+   LINK
+===================================== */
+
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+
+
+/* =====================================
+   CONTAINER
+===================================== */
+
+
+.container{
+
+    width:90%;
+
+    max-width:450px;
+
+    margin:auto;
+
+    padding-bottom:90px;
+
+}
+
+
+
+/* =====================================
+   BUTTON GLOBAL
+===================================== */
+
+
+.btn{
+
+
+    display:block;
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:14px;
+
+
+    background:var(--primary);
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    text-align:center;
+
+    cursor:pointer;
+
+
+    transition:.3s;
+
+}
+
+
+
+.btn:hover{
+
+
+    background:var(--primary-dark);
+
+}
+
+
+
+/* =====================================
+   CARD GLOBAL
+===================================== */
+
+
+.card{
+
+
+    background:var(--white);
+
+    border-radius:20px;
+
+    padding:20px;
+
+    box-shadow:
+
+    0 8px 20px rgba(0,0,0,.06);
+
+
+    margin-bottom:20px;
+
+}
+
+
+
+/* =====================================
+   TITLE
+===================================== */
+
+
+.section-title{
+
+
+    margin:25px 0 15px;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    color:var(--text);
+
+}
+
+
+
+/* =====================================
+   INPUT GLOBAL
+===================================== */
+
+
+input,
+textarea,
+select{
+
+
+    width:100%;
+
+    padding:13px 15px;
+
+    border-radius:12px;
+
+    border:1px solid var(--border);
+
+    background:#fff;
+
+    outline:none;
+
+    font-size:14px;
+
+}
+
+
+
+input:focus,
+textarea:focus,
+select:focus{
+
+
+    border-color:var(--primary);
+
+}
+
+
+
+/* =====================================
+   FORM GROUP
+===================================== */
+
+
+.form-group{
+
+
+    margin-bottom:18px;
+
+
+}
+
+
+
+.form-group label{
+
+
+    display:block;
+
+    margin-bottom:7px;
+
+    font-size:14px;
+
+    font-weight:500;
+
+    color:#555;
+
+}
+
+
+
+/* =====================================
+   TEXT
+===================================== */
+
+
+.subtitle{
+
+
+    color:var(--gray);
+
+    font-size:14px;
+
+    line-height:1.6;
+
+}
+
+
+
+/* =====================================
+   IMAGE
+===================================== */
+
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+
+
+/* =====================================
+   STATUS
+===================================== */
+
+
+.status-success{
+
+
+    background:#E8F5E9;
+
+    color:#2E7D32;
+
+}
+
+
+.status-warning{
+
+
+    background:#FFF3E0;
+
+    color:#EF6C00;
+
+}
