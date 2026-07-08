@@ -97,8 +97,13 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
         <div class="hero-image">
 
             <img
-            src="assets/images/avatar-default.png"
-            alt="Avatar">
+            src="<?=
+            !empty($user['foto_profile'])
+            ? 'assets/uploads/profile/'.$user['foto_profile']
+            : 'assets/images/avatar-default.png';
+            ?>"
+            alt="Foto Profile"
+            class="profile-image">
 
         </div>
 

@@ -7,15 +7,22 @@ $user_id = $_SESSION['user_id'];
 
 $sql = "SELECT * FROM users WHERE id=?";
 
-$stmt = mysqli_prepare($conn,$sql);
+$stmt = mysqli_prepare($conn, $sql);
 
-mysqli_stmt_bind_param($stmt,"i",$user_id);
+mysqli_stmt_bind_param($stmt, "i", $user_id);
 
 mysqli_stmt_execute($stmt);
 
 $result = mysqli_stmt_get_result($stmt);
 
 $user = mysqli_fetch_assoc($result);
+
+// Menentukan foto profil
+if (!empty($user['foto_profile']) && file_exists("assets/uploads/profile/" . $user['foto_profile'])) {
+    $fotoProfile = "assets/uploads/profile/" . $user['foto_profile'];
+} else {
+    $fotoProfile = "assets/images/avatar-default.png";
+}
 
 ?>
 
@@ -44,69 +51,71 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 
 <div class="container">
 
-<div class="profile-header">
+    <div class="profile-header">
 
-<img
-src="assets/images/avatar-default.png"
-class="profile-photo">
+        <!-- FOTO PROFILE -->
+        <img
+        src="<?= $fotoProfile; ?>"
+        class="profile-photo"
+        alt="Foto Profil">
 
-<h2>
+        <h2>
 
-<?= $user['nama_lengkap']; ?>
+            <?= htmlspecialchars($user['nama_lengkap']); ?>
 
-</h2>
+        </h2>
 
-<p>
+        <p>
 
-<?= $user['email']; ?>
+            <?= htmlspecialchars($user['email']); ?>
 
-</p>
+        </p>
 
-</div>
+    </div>
 
-<div class="menu-card">
+    <div class="menu-card">
 
-<a href="edit_profile.php">
+        <a href="edit_profile.php">
 
-<i class="bi bi-person-fill"></i>
+            <i class="bi bi-person-fill"></i>
 
-Edit Profil
+            Edit Profil
 
-<i class="bi bi-chevron-right"></i>
+            <i class="bi bi-chevron-right"></i>
 
-</a>
+        </a>
 
-<a href="change_password.php">
+        <a href="change_password.php">
 
-<i class="bi bi-lock-fill"></i>
+            <i class="bi bi-lock-fill"></i>
 
-Ubah Password
+            Ubah Password
 
-<i class="bi bi-chevron-right"></i>
+            <i class="bi bi-chevron-right"></i>
 
-</a>
+        </a>
 
-<a href="history.php">
+        <a href="history.php">
 
-<i class="bi bi-clock-history"></i>
+            <i class="bi bi-clock-history"></i>
 
-Riwayat Booking
+            Riwayat Booking
 
-<i class="bi bi-chevron-right"></i>
+            <i class="bi bi-chevron-right"></i>
 
-</a>
+        </a>
 
-<a href="logout.php" class="logout">
+        <a href="logout.php" class="logout">
 
-<i class="bi bi-box-arrow-right"></i>
+            <i class="bi bi-box-arrow-right"></i>
 
-Logout
+            Logout
 
-<i class="bi bi-chevron-right"></i>
+            <i class="bi bi-chevron-right"></i>
 
-</a>
+        </a>
 
-</div>
+    </div>
 
 </div>
 
